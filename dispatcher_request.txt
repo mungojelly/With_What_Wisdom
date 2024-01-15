@@ -1,0 +1,11 @@
+pwweeese write a script named dispatch.py which first sets the cwd to the dir dispatch.py itself is in and then does the following
+
+the subdirs of that dir are the stations
+
+for each station, consider whether it has an outbox subdir
+
+for any subdirs of any outboxes at any of the stations, please examine those subdirs and decide where they should go
+
+for each such subdir, look at its plan.json and pop the first string off of plan["remaining plan"] as the destination, save an updated version of plan.json (with indent=4), and then move the subdir to the inbox subdir (creating it if necessary) of the destination station
+
+also please whenever anything happens please print an evocative interesting statement including many different emoji

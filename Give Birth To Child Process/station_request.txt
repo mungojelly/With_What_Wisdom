@@ -1,0 +1,7 @@
+please write a script give-birth-to-child-process.py which first sets the cwd to the dir give-birth-to-child-process.py itself is in, and then does the following
+
+go through ./inbox and for each subdir of ./inbox (the parent directories) first make a new directory in the outbox with a plan.json which has as plan["child plan"] the "child plan" from the parent's plan.json and also as plan["remaining plan"] the "child plan" from the parent's plan.json and then move the parent to the outbox
+
+oh also could you put a relations.json in each new child as you make it that has as relations["parent"] the directory name of the parent directory, and as relations["self"] the directory name of the child directory, oh and could make the child directory name a new randomly generated uuid, and before you move the parent could you please make a relations.json or add to it so that relations["children"] in the parent is created as a list of strings w/ the child's uuid as the only member or has the child's uuid appended to it and save an updated version
+
+please print evocative interesting complex statements w/ lots of pretty emoji every time anything happens
