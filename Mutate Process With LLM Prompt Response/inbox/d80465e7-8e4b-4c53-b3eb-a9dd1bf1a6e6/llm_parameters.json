@@ -1,0 +1,10 @@
+{
+    "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "temperature": 1,
+    "max_tokens": 1000,
+    "api_base": "https://api.endpoints.anyscale.com/v1",
+    "api_key_environment_variable": "MYSTERIOUS_WAVES_OF_ENDPOINT",
+    "tags": ["mixtral", "anyscale", "testing"],
+    "comment": "This is a test of the emergency broadcast system.",
+    "output_filename": "response.txt"
+}

@@ -148,7 +148,7 @@ def save_llm_output():
         exit(1)
 
     # load parameters from json file
-    with open(f"./inbox/{random_inbox_subdir}/genome/llm_parameters.json") as f:
+    with open(f"./inbox/{random_inbox_subdir}/llm_parameters.json") as f:
         params = json.load(f)
 
     # Load prompt from prompt.txt
