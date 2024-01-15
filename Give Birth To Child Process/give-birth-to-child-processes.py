@@ -33,6 +33,10 @@ def process_directory(parent_dir, child_uuid):
         }
         with open(child_dir / 'plan.json', 'w') as file:
             json.dump(child_plan, file, indent=4)
+        # copy the parent genome directory to the child, if it's present
+        parent_genome_dir = parent_dir / 'genome'
+        if parent_genome_dir.exists():
+            shutil.copytree(parent_genome_dir, child_dir / 'genome')
 
     create_or_update_relations_json(parent_dir, {"children": [child_uuid]})
     create_or_update_relations_json(child_dir, {"parent": parent_dir.name, "self": child_uuid})
