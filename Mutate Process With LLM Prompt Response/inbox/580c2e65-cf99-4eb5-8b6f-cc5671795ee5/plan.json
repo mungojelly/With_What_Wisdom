@@ -1,0 +1,18 @@
+{
+    "child plan": [
+        "Copy Prompt Dot Txt From Genome",
+        "Copy LLM Underscore Parameters Dot Json From Genome",
+        "LLM Prompt Response",
+        "Mutate Process With LLM Prompt Response",
+        "Give Birth To Child Process",
+        "Give Birth To Child Process",
+        "Give Birth To Child Process",
+        "The End"
+    ],
+    "remaining plan": [
+        "Give Birth To Child Process",
+        "Give Birth To Child Process",
+        "Give Birth To Child Process",
+        "The End"
+    ]
+}
