@@ -27,7 +27,7 @@ def process_subdir(subdir_path, station_name):
         
         if plan["remaining plan"]:
             destination = plan["remaining plan"].pop(0)
-            print(f"📦 Moving {subdir_path} from {station_name} to {destination} 🚚")
+            print(f"📦📦📦 Moving {subdir_path} 📦📦📦 \n🚚🚚🚚 to {destination} 🚚🚚🚚")
 
             with open(plan_path, 'w') as file:
                 json.dump(plan, file, indent=4)

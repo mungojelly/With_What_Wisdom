@@ -140,7 +140,7 @@ def save_llm_output():
         print("ERROR: ./inbox subdir not found!")
         exit(1)
     except IndexError:
-        print("ERROR: ./inbox subdir is empty!")
+        print("YAY ALL DONE: ./inbox subdir is empty!")
         exit(1)
     except Exception as e:
         print("ERROR: Unknown error while trying to choose a random ./inbox subdir!")
